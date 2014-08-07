@@ -1,9 +1,9 @@
 module.exports = function(app,app_secure,hasher){
- hasher.hash('test1foobar2', function(err, salt, hash){
+ hasher.hash('ravi201', function(err, salt, hash){
       if (err) throw err;
       // store the salt & hash in the "db"
-      users.tom.salt = salt;
-      users.tom.hash = hash;
+      users.ravi.salt = salt;
+      users.ravi.hash = hash;
     });
 
 
@@ -114,7 +114,7 @@ module.exports = function(app,app_secure,hasher){
     // dummy database
 
     var users = {
-      tom: { name: 'Ravinder' }
+      ravi: { name: 'Ravi' }
     };
 
     // when you create a user, generate a salt
